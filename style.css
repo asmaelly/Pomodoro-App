@@ -1,0 +1,175 @@
+html {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  min-height: 100vh;
+  color: #d8e9ef;
+  background-image: linear-gradient(-20deg, #ffdced 0%, #ef9087 100%);
+  background-size: cover;
+}
+
+
+h1 {
+  margin: 0 auto 5px auto;
+  color: #ffffff;
+  font-size: 3rem;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Anton SC", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+  font-family: "Anton SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.app-message {
+  height: 20px;
+  margin: 10px auto 20px auto;
+  font-family: "Anton SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.app-container {
+  width: 250px;
+  height: 420px;
+  margin: 40px auto;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 29px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 2em 5em 3em;
+  transition: all 0.5s ease;
+
+}
+.app-circle {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+.circle-shape {
+  pointer-events: none;
+}
+.semi-circle {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  box-sizing: border-box;
+  border: solid 6px;
+}
+
+.left-side {
+  top: 0;
+  left: 0;
+  transform-origin: right center;
+  transform: rotate(0deg);
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-right: none;
+  z-index: 1;
+}
+
+ .right-side {
+  top: 0;
+  left: 100px;
+  transform-origin: left center;
+  transform: rotate(0deg);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-left: none;
+}
+.circle {
+  border-color: #f1eded;
+}
+
+.circle-mask {
+  border-color: #ffffff;
+}
+.app-counter-box {
+  font-family: 'Droid Sans Mono', monospace;
+  font-size: 300%;
+  position: relative;
+  top: 66px;
+  color: #ffffff;
+}
+hr{
+  position: relative;
+  top: 7.5rem;
+  width: 100%;
+  border-top: 3px solid #ffffff;
+}
+button {
+  position: relative;
+  top: 8rem;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #d8e9ef;
+}
+
+button:hover {
+  color: #90c0d1;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+button {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 20px; /* Rounded edges */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Individual button styles */
+#btn-start {
+  background-color: #ffffff;
+  color: #a9abac;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btn-pause {
+  background-color: #ffffff;
+  color: #a9abac;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btn-reset {
+  background-color: #ffffff;
+  color: #a9abac;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effects */
+button:hover {
+  transform: scale(1.1); /* Slightly increase size */
+  filter: brightness(1.1);
+}
+
+/* Active (click) effect */
+button:active {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
